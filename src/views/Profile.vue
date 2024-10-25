@@ -34,17 +34,6 @@
 		<!-- User Profile Card -->
 
 		<a-row type="flex" :gutter="24">
-
-			<!-- Platform Settings Column -->
-			<a-col :span="24" :md="8" class="mb-24">
-
-				<!-- Platform Settings Card -->
-				<CardPlatformSettings></CardPlatformSettings>
-				<!-- / Platform Settings Card -->
-
-			</a-col>
-			<!-- / Platform Settings Column -->
-
 			<!-- Profile Information Column -->
 			<a-col :span="24" :md="8" class="mb-24">
 
@@ -54,18 +43,6 @@
 
 			</a-col>
 			<!-- / Profile Information Column -->
-			
-			<!-- Conversations Column -->
-			<a-col :span="24" :md="8" class="mb-24">
-			
-				<!-- Conversations Card -->
-				<CardConversations
-					:data="conversationsData"
-				></CardConversations>
-				<!-- / Conversations Card -->
-
-			</a-col>
-			<!-- / Conversations Column -->
 
 		</a-row>
 		
@@ -126,9 +103,7 @@
 
 <script>
 
-	import CardPlatformSettings from "../components/Cards/CardPlatformSettings"
 	import CardProfileInformation from "../components/Cards/CardProfileInformation"
-	import CardConversations from "../components/Cards/CardConversations"
 	import CardProject from "../components/Cards/CardProject"
 
 	// Conversation's list data.
@@ -207,9 +182,7 @@
 
 	export default ({
 		components: {
-			CardPlatformSettings,
 			CardProfileInformation,
-			CardConversations,
 			CardProject,
 		},
 		data() {
