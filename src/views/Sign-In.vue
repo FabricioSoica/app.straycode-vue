@@ -10,8 +10,8 @@
 
 			<!-- Sign In Form Column -->
 			<a-col :span="24" :md="12" :lg="{span: 12, offset: 0}" :xl="{span: 6, offset: 2}" class="col-form">
-				<h1 class="mb-15">Sign In</h1>
-				<h5 class="font-regular text-muted">Enter your email and password to sign in</h5>
+				<h1 class="mb-15">Login</h1>
+				<h5 class="font-regular text-muted">Entre com seu email e senha para logar</h5>
 
 				<!-- Sign In Form -->
 				<a-form
@@ -36,23 +36,23 @@
 						]" type="password" placeholder="Password" />
 					</a-form-item>
 					<a-form-item class="mb-10">
-    					<a-switch v-model="rememberMe" /> Remember Me
+    					<a-switch v-model="rememberMe" /> Lembrar senha?
 					</a-form-item>
 					<a-form-item>
 						<a-button type="primary" block html-type="submit" class="login-form-button">
-							SIGN IN
+							Logar
 						</a-button>
 					</a-form-item>
 				</a-form>
 				<!-- / Sign In Form -->
 
-				<p class="font-semibold text-muted">Don't have an account? <router-link to="/sign-in" class="font-bold text-dark">Sign Up</router-link></p>
+				<p class="font-semibold text-muted">Não tem uma conta? <router-link to="/sign-in" class="font-bold text-dark">Crie uma nova</router-link></p>
 			</a-col>
 			<!-- / Sign In Form Column -->
 
 			<!-- Sign In Image Column -->
 			<a-col :span="24" :md="12" :lg="12" :xl="12" class="col-img">
-				<img src="images/img-signin.jpg" alt="">
+				<img src="images/straycodeLogo.jpg" alt="LogoStrayCode">
 			</a-col>
 			<!-- Sign In Image Column -->
 
